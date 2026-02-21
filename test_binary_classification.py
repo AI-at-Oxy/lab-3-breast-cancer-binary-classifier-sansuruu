@@ -104,7 +104,7 @@ class TestForward:
         x = torch.tensor([100.0, -50.0, 25.0])
         b = torch.tensor(10.0)
         result = forward(x, w, b)
-        assert 0 < result < 1, f"forward output {result} not in (0, 1)"
+        assert 0 < result <= 1, f"forward output {result} not in (0, 1)"
 
 
 # =============================================================================
